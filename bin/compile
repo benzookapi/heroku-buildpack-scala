@@ -23,7 +23,9 @@ du -s /app/tmp/repo.git/.cache
 
 ls -al /app/tmp/repo.git/.cache
 
-rm -rf /app/tmp/repo.git/.cache/*
+rm -rf /app/tmp/repo.git/.cache
+
+mkdir /app/tmp/repo.git/.cache
 
 curl --silent --location http://heroku-jvm-common.s3.amazonaws.com/jvm-buildpack-common.tar.gz | tar xz
 . bin/java
